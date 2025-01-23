@@ -1,0 +1,34 @@
+.fade{
+    transition: opacity .15s linear;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+
+.show{
+    background: rgba(0, 0, 0, 0.599);
+}
+
+.form-check{
+    border: solid 1px black;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.modal-body{
+    overflow: auto;
+    max-height: 500px;
+}
+
+#question{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.question{
+    font-weight: bold;
+    font-size: 20px;
+}

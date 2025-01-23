@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POMA-TEST</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container h-100">
+    <div class="row mt-2">
+      <h1>SIMULADOR DE POMA</h1>
+      <button class="btn btn-primary" id="start">COMENZAR</button>
+    </div>
+    <div class="row mt-2 mb-5" style="border: solid 2px black;" id="results">
+      <h2 id="result">RESULTADOS 10/25</h2>
+      <div class="row" id="respuestas">
+        <div class="row">
+          <div class="question">#1</div>
+          <div class="question">Enunciado</div>
+          <img src="./empty.jpg"/>
+          <div class="mt-2">Tu Respuesta</div>
+          <div class="alert alert-danger ">Respuesta Seleccionada</div>
+          <div>Respuesta Correcta</div> 
+          <div class="alert alert-success">Respuesta Correcta</div>
+        </div>
+      </div>
+      <button class="btn btn-primary mb-2" id="restart">Volver a Intentar</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pagination">Pregunta 1/25</h5>
+      </div>
+      <div class="modal-body">
+       <div class="row ">
+        <p id="question" class="w-100">¿Cuál es la capital de Francia?</p>
+        <img id="img" src="./empty.jpg" />
+        <fieldset>
+          <div class="row mt-2" id="answers">
+            <div class="form-check" id="a">
+              <input class="form-check-input" type="radio" >
+              <label class="ms-2 form-check-label" >
+                Paris
+              </label>
+            </div>
+            <div class="form-check" id="b">
+              <input class="form-check-input" type="radio"  >
+              <label class="ms-2 form-check-label"  >
+                Londres
+              </label>
+            </div>
+            <div class="form-check" id="c">
+              <input class="form-check-input" type="radio" >
+              <label class="ms-2 form-check-label" >
+                Madrid
+              </label>
+            </div>
+            <div class="form-check" id="d">
+              <input class="form-check-input" type="radio">
+              <label class="ms-2 form-check-label">
+                Berlín
+              </label>
+            </div>
+          </div>
+        </fieldset>
+       </div>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" id="next" class="btn btn-primary">Siguiente</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
